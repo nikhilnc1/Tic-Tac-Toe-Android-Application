@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#009688"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-120dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lemon_regular"
+        android:gravity="center"
+
+        android:paddingBottom="60dp"
+        android:text="Tic - Tac - Toe"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lemon_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Score Card"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X : 0"
+            android:padding="5dp"
+            android:fontFamily="@font/lemon_regular"
+            android:id="@+id/xScore"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O : 0"
+            android:padding="5dp"
+            android:fontFamily="@font/lemon_regular"
+            android:id="@+id/oScore"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Draw : 0"
+            android:padding="5dp"
+            android:fontFamily="@font/lemon_regular"
+            android:id="@+id/drawScore"
+            />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="-40dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:fontFamily="@font/lemon_regular"
+            android:onClick="check"
+            app:cornerRadius="5dp" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#ffffff"
+        android:fontFamily="@font/lemon_regular"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp"
+        android:id="@+id/reset"
+        />
+
+
+
+
+</LinearLayout>
